@@ -39,4 +39,52 @@ Hard
  (2, 'Shohruh', 26),
  (3, 'Umarbek', 18);
 
-3.
+3.Save the file to your computer (e.g., C:\Backups\AdventureWorksDW2022.bak).
+
+ Open SQL Server Management Studio (SSMS)
+
+Launch SSMS.
+
+Connect to your SQL Server instance (enter server name, authentication method, username, and password if needed).
+
+ Start the Restore Process
+
+In Object Explorer, right-click on Databases → Restore Database….
+
+ Select the Backup File
+
+In the Source section, choose Device → click the … button.
+
+Click Add, browse to your downloaded .bak file location, and select it.
+
+Click OK.
+
+ Choose the Database Name
+
+In the Destination section, enter a database name (e.g., AdventureWorksDW2022).
+(If you already have a database with this name, rename it or choose “Overwrite the existing database” in Options.)
+
+ Set Restore Options
+
+Go to the Options page (left side).
+
+Check:
+
+Overwrite the existing database (WITH REPLACE) (only if you’re replacing an old version).
+
+Ensure Restore As paths match your SQL Server data folder.
+
+ Execute the Restore
+
+Click OK to start the restore.
+
+Wait until you get the message:
+Database 'AdventureWorksDW2022' restored successfully.
+
+ Verify the Database
+
+In Object Explorer, expand Databases and check that AdventureWorksDW2022 appears.
+
+Run a simple query:
+
+SELECT TOP 10 * FROM DimCustomer;
