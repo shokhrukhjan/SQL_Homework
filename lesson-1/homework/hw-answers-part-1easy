@@ -1,3 +1,5 @@
+EASY
+
 1.1. Ma'lumotlar - turli xil shakldagi axborotlar to'plami, masalan audio, video, text, jadvallar va hokazo.
 1.2. Ma'lumotlar bazasi - ma'lumotlarni o'zida saqlaydigan tizim, bu tizimda biz ma'lumotlarni tahrirlashimiz, qo'shimcha ma'lumotlar qo'shishimiz, o'chirib tashlashimiz, qidirish 
 orqali bizga kerak bo'lgan ma'lumotlarni tezda topishimiz mumkin.
@@ -12,3 +14,29 @@ orqali bizga kerak bo'lgan ma'lumotlarni tezda topishimiz mumkin.
 
 3.Windows Authentication Mode - WIndows foydalanuvchisi ma'lumotlaridan foydalaniladigan autentifikatsiya usuli bo'lib bu bu usul xavfsizlikka tayanadi. Shu sababli bu usul xavfsiz, oson va qulay hisoblanadi.
   SQL Server Authentication Mode - SQL serveri ichida yaratilgan foydalanuvchi login paroli orqali autentifikatsiya qilinadi.
+
+Medium
+
+create database SchoolDB --SchoolDB nomli malumotlar bazasi yaratib oldim
+use SchoolDB --SchoolDB database ni ishlatib oldim
+create table Students( --Students nomli jadval yaratib oldim
+StudentID int primary key,  -- StudentID nomli ustun yaratdim, type = int primary key
+Name varchar (50), --Name nomli ustun yaratdim va type=varchar(50)
+AGE int --AGE nomli ustun yaratdim, type=int
+)
+select * from Students ---- Students jadvalidagi barcha ustunlar va barcha satrlarni tanlab olish
+
+Hard
+1.DQL(Data Query Language) - asosan ma'lumotlarni olish uchun ishlatiladi. Asosiy buyruq - SELECT.
+  DML(Data Manipulation Language) - Ma'lumotlarni boshqarish tili. Vazifasi ma'lumotlarni tahrirlash, o'chirish, yangilash. Asosiy buyruqlari: INSERT,UPDATE,DELETE
+  DDL(Data Defination Language)- Ma'lumotlarni ta'riflash tili. Bazadagi jadvallar, indekslar o'zgartirish, yaratish, o'chirish uchun ishlatiladi. Asosiy buyruqlari: CREATE, ALTER, DROP, TRUNCATE.
+  DCL(Data Control Language) - Malumotlarni boshqarish tili. Bazaga kirish va ruxsatlarni boshqarish uchun ishlatiladi. Asosiy buyruqlari: GRANT va REVOKE
+  TCL(Transaction Control Language) - Tranzaksiyalarni boshqarish tili. Bazadagi tranzaksiyalarni boshqaradi va yaxlitligini taminlaydi. Asosiy buyruqlari: COMMIT, ROLLBACK, SAVEPOINT, SET TRANSACTION.
+
+2. INSERT INTO Students (StudentID, Name, Age)  --qaysi jadvalga ma'lumotlar kiritilishi kerakligini belgilaydi
+ VALUES   --kiritilgan qiymatlar ro'yhati
+ (1, 'Kamola', 23),
+ (2, 'Shohruh', 26),
+ (3, 'Umarbek', 18);
+
+3.
