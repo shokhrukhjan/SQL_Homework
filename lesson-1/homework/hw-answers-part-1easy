@@ -1,0 +1,14 @@
+1.1. Ma'lumotlar - turli xil shakldagi axborotlar to'plami, masalan audio, video, text, jadvallar va hokazo.
+1.2. Ma'lumotlar bazasi - ma'lumotlarni o'zida saqlaydigan tizim, bu tizimda biz ma'lumotlarni tahrirlashimiz, qo'shimcha ma'lumotlar qo'shishimiz, o'chirib tashlashimiz, qidirish 
+orqali bizga kerak bo'lgan ma'lumotlarni tezda topishimiz mumkin.
+1.3. Relyatsion ma'lumotlar bazasi - ma'lumotlarni jadval ko'rinishda saqlanadigan ma'lumotlar bazasi turi. Bunda jadvallar kalit orqali bir-biriga bog'lanadi.
+1.4. Jadval - ustun va satrlardan tashkil topgan tuzilma bo'lib realyatsion ma'lumotlar bazasida ishlatiladi. Har bir ustun bu ma'lumot turi, har bir Satr bitta yozuv ya'ni bitta ma'lumot.
+
+2.Relyatsion ma’lumotlar bazasini boshqarish - ma'lumotlarni jadvallarda saqlash va ularni keylar orqali bir-biriga bog'lash
+  Transact-SQL - ma'lumotlarni olish, tahrirlash uchun Microsoft va Sybase tomonidan ishlab chiqilgan SQLning kengaytirilgan talqini.
+  High security - Autentifikatsiya, shifrlash kabi himoya tizimlari orqali kirish nazorati.
+  Scalability & High Availability - tizim katta hajmdagi ma'lumotlar bilan ishlaganda ham, foydalanuvchilar soni ko'p bo'lganda ham, tizimda biror nosozlik bo'lganda ham minimal to'xtashlar bilan xizmat ko'rsatish.
+  Business Intelligence & Analytics - ma'lumotlarni to'plash, tahrirlash, vizual ko'rinishga keltirib, ularni tahlil qilish va tendensiyalarni aniqlaydigan texnologiyalar majmui.
+
+3.Windows Authentication Mode - WIndows foydalanuvchisi ma'lumotlaridan foydalaniladigan autentifikatsiya usuli bo'lib bu bu usul xavfsizlikka tayanadi. Shu sababli bu usul xavfsiz, oson va qulay hisoblanadi.
+  SQL Server Authentication Mode - SQL serveri ichida yaratilgan foydalanuvchi login paroli orqali autentifikatsiya qilinadi.
